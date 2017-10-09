@@ -4,25 +4,69 @@
     <meta charset="UTF-8">
     <title>hello webStorm</title>
     <script type="text/javascript" src="JsDemo.js"></script>
+    <script type="text/javascript" src="imgLoad.js"></script>
+    <style type="text/css">
+        body
+       {
+            background-image: url('http://p6.qhimg.com/t0176353db79427f0cf.jpg');
+            background-repeat:no-repeat;
+            background-attachment:scroll;
+            background-position: 0% 0%;
+        }
+        p.big{
+            line-height: 200%;
+        }
+        p.small{
+            line-height: 90%;
+        }
+        span.deepskyblue{
+            color: deepskyblue;
+        }
+        h1{
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-<p onclick="compare(12,19)">比较大小加弹窗</p>
+<p class="big" onclick="compare(12,19)">比较大小加弹窗</p>
 
 <p onclick="confirmOrAlert()" >确定按钮加弹窗</p>
 
 <p onclick="promptResult()">输入框加弹窗</p>
-
-
-<p>good good study! day day up！</p>
-<!--<script type="text/javascript">-->
-    <!--setTimeout(function () {-->
-        <!--location.replace("http://www.baidu.com/");-->
-    <!--},3000);-->
-<!--</script>-->
-
 <p onclick="documentResult()">获取HTML</p>
+<div id="showimg">
+</div>
+<input type="file" id="file_input" name="img" />
+<script type="text/javascript">
+    show()
+</script>
+<ul>
+    <li><p onclick="confirmOrAlert()">信息一</p> </li>
+    <li><p onclick="">信息二</p> </li>
+</ul>
+<ol>
+    <li><p onclick="confirmOrAlert()">信息一</p> </li>
+    <li><p onclick="">信息二</p> </li>
+</ol>
 
+<a href="http://www.baidu.com/" title="这是一个连接" target="_blank"><span class="deepskyblue">跳转至百度</span></a><br>
 
-
+<p class="big">
+    这个段落拥有更大的行高。<br>
+    这个段落拥有更大的行高。<br>
+    这个段落拥有更大的行高。<br>
+    这个段落拥有更大的行高。<br>
+    这个段落拥有更大的行高。<br>
+    这个段落拥有更大的行高。<br>
+    这个段落拥有更大的行高。<br></p>
+<p class="small">
+    这个段落拥有更小的行高。<br>
+    这个段落拥有更小的行高。<br>
+    这个段落拥有更小的行高。<br>
+    这个段落拥有更小的行高。<br>
+    这个段落拥有更小的行高。<br>
+    这个段落拥有更小的行高。<br>
+    这个段落拥有更小的行高。<br>
+</p>
 </body>
 </html>

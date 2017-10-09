@@ -40,3 +40,8 @@ function documentResult() {
         alert(html);
     }
 }
+
+function linkBaidu() {
+
+
+}
